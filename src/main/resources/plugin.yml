@@ -1,0 +1,24 @@
+name: FriendsPlugin
+version: 1.0.0
+main: com.example.friendsplugin.FriendsPlugin
+api-version: 1.19
+author: ServerAdmin
+description: A simple friends plugin that allows players to add friends and view their friend list
+
+commands:
+  friend:
+    description: Add a friend to your friends list
+    usage: /friend add <username>
+    permission: friends.add
+  friends:
+    description: View your friends list
+    usage: /friends
+    permission: friends.list
+
+permissions:
+  friends.add:
+    description: Allows players to add friends
+    default: true
+  friends.list:
+    description: Allows players to view their friends list
+    default: true
